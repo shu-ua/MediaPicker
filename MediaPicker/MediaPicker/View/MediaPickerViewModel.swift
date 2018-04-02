@@ -7,17 +7,15 @@
 //
 
 import Foundation
+import RxSwift
 
 struct MediaPickerViewModel {
 
     let configuration: Configuration
     
-    private let galleryViewModel: GalleryViewModel
-    
     //MARK: - Initialization
     init(configuration: Configuration = Configuration()) {
         self.configuration = configuration
-        self.galleryViewModel = GalleryViewModel(configuration: configuration)
     }
     
 }

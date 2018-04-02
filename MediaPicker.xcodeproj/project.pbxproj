@@ -20,10 +20,14 @@
 		F296F632207187D50027FC54 /* MediaAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F631207187D50027FC54 /* MediaAsset.swift */; };
 		F296F63420718B790027FC54 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63320718B790027FC54 /* GalleryViewModel.swift */; };
 		F296F63720718FC50027FC54 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63620718FC50027FC54 /* AssetManager.swift */; };
-		F296F6402071A1DF0027FC54 /* GalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63E2071A1DF0027FC54 /* GalleryViewCell.swift */; };
-		F296F6412071A1DF0027FC54 /* GalleryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F63F2071A1DF0027FC54 /* GalleryViewCell.xib */; };
+		F296F6402071A1DF0027FC54 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63E2071A1DF0027FC54 /* GalleryCell.swift */; };
+		F296F6412071A1DF0027FC54 /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F63F2071A1DF0027FC54 /* GalleryCell.xib */; };
 		F296F6462071A65F0027FC54 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F6442071A65F0027FC54 /* GalleryViewController.swift */; };
 		F296F6472071A65F0027FC54 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F6452071A65F0027FC54 /* GalleryViewController.xib */; };
+		F296F64C20729C360027FC54 /* NoPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F64A20729C360027FC54 /* NoPermissionView.swift */; };
+		F296F64D20729C360027FC54 /* NoPermissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F64B20729C360027FC54 /* NoPermissionView.xib */; };
+		F296F6532072D0A50027FC54 /* GalleryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F6522072D0A50027FC54 /* GalleryCellViewModel.swift */; };
+		F296F6552072D62A0027FC54 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F6542072D62A0027FC54 /* Defines.swift */; };
 		F720F343DFAA52B96F891A24 /* Pods_MediaPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CFBDE6849BA8D82EA31C58 /* Pods_MediaPicker.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,10 +64,14 @@
 		F296F631207187D50027FC54 /* MediaAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAsset.swift; sourceTree = "<group>"; };
 		F296F63320718B790027FC54 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		F296F63620718FC50027FC54 /* AssetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
-		F296F63E2071A1DF0027FC54 /* GalleryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewCell.swift; sourceTree = "<group>"; };
-		F296F63F2071A1DF0027FC54 /* GalleryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewCell.xib; sourceTree = "<group>"; };
+		F296F63E2071A1DF0027FC54 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		F296F63F2071A1DF0027FC54 /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
 		F296F6442071A65F0027FC54 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = MediaPicker/MediaPicker/View/Gallery/GalleryViewController.swift; sourceTree = SOURCE_ROOT; };
 		F296F6452071A65F0027FC54 /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GalleryViewController.xib; path = MediaPicker/MediaPicker/View/Gallery/GalleryViewController.xib; sourceTree = SOURCE_ROOT; };
+		F296F64A20729C360027FC54 /* NoPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPermissionView.swift; sourceTree = "<group>"; };
+		F296F64B20729C360027FC54 /* NoPermissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoPermissionView.xib; sourceTree = "<group>"; };
+		F296F6522072D0A50027FC54 /* GalleryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCellViewModel.swift; sourceTree = "<group>"; };
+		F296F6542072D62A0027FC54 /* Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,9 +160,10 @@
 		F296F622207179780027FC54 /* MediaPicker */ = {
 			isa = PBXGroup;
 			children = (
-				F296F631207187D50027FC54 /* MediaAsset.swift */,
-				F296F62420717A320027FC54 /* View */,
+				F296F6542072D62A0027FC54 /* Defines.swift */,
+				F296F6482072946A0027FC54 /* Models */,
 				F296F63520718FB10027FC54 /* Services */,
+				F296F62420717A320027FC54 /* View */,
 				F296F62B20717D180027FC54 /* Configuration.swift */,
 			);
 			path = MediaPicker;
@@ -170,6 +179,7 @@
 		F296F62420717A320027FC54 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F296F64920729B7F0027FC54 /* NoPermissionView */,
 				F296F630207187930027FC54 /* Gallery */,
 				F296F62920717AD00027FC54 /* MediaPickerViewModel.swift */,
 				F296F62720717AB20027FC54 /* MediaPickerViewController.swift */,
@@ -181,7 +191,9 @@
 		F296F630207187930027FC54 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				F296F63C207199930027FC54 /* View */,
+				F296F63D2071A1BD0027FC54 /* Cell */,
+				F296F6442071A65F0027FC54 /* GalleryViewController.swift */,
+				F296F6452071A65F0027FC54 /* GalleryViewController.xib */,
 				F296F63320718B790027FC54 /* GalleryViewModel.swift */,
 			);
 			path = Gallery;
@@ -195,23 +207,31 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		F296F63C207199930027FC54 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F296F63D2071A1BD0027FC54 /* Cell */,
-				F296F6442071A65F0027FC54 /* GalleryViewController.swift */,
-				F296F6452071A65F0027FC54 /* GalleryViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F296F63D2071A1BD0027FC54 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F296F63E2071A1DF0027FC54 /* GalleryViewCell.swift */,
-				F296F63F2071A1DF0027FC54 /* GalleryViewCell.xib */,
+				F296F63E2071A1DF0027FC54 /* GalleryCell.swift */,
+				F296F63F2071A1DF0027FC54 /* GalleryCell.xib */,
+				F296F6522072D0A50027FC54 /* GalleryCellViewModel.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		F296F6482072946A0027FC54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F296F631207187D50027FC54 /* MediaAsset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F296F64920729B7F0027FC54 /* NoPermissionView */ = {
+			isa = PBXGroup;
+			children = (
+				F296F64A20729C360027FC54 /* NoPermissionView.swift */,
+				F296F64B20729C360027FC54 /* NoPermissionView.xib */,
+			);
+			path = NoPermissionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F296F6412071A1DF0027FC54 /* GalleryViewCell.xib in Resources */,
+				F296F6412071A1DF0027FC54 /* GalleryCell.xib in Resources */,
 				F296F60D207179250027FC54 /* LaunchScreen.storyboard in Resources */,
 				F296F62F2071810D0027FC54 /* MediaPickerViewController.xib in Resources */,
 				F296F60A207179250027FC54 /* Assets.xcassets in Resources */,
 				F296F608207179250027FC54 /* Main.storyboard in Resources */,
+				F296F64D20729C360027FC54 /* NoPermissionView.xib in Resources */,
 				F296F6472071A65F0027FC54 /* GalleryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,12 +453,15 @@
 			files = (
 				F296F62A20717AD00027FC54 /* MediaPickerViewModel.swift in Sources */,
 				F296F63420718B790027FC54 /* GalleryViewModel.swift in Sources */,
+				F296F6552072D62A0027FC54 /* Defines.swift in Sources */,
 				F296F603207179250027FC54 /* AppDelegate.swift in Sources */,
 				F296F63720718FC50027FC54 /* AssetManager.swift in Sources */,
 				F296F632207187D50027FC54 /* MediaAsset.swift in Sources */,
-				F296F6402071A1DF0027FC54 /* GalleryViewCell.swift in Sources */,
+				F296F6402071A1DF0027FC54 /* GalleryCell.swift in Sources */,
+				F296F6532072D0A50027FC54 /* GalleryCellViewModel.swift in Sources */,
 				F296F6462071A65F0027FC54 /* GalleryViewController.swift in Sources */,
 				F296F62C20717D180027FC54 /* Configuration.swift in Sources */,
+				F296F64C20729C360027FC54 /* NoPermissionView.swift in Sources */,
 				F296F62820717AB20027FC54 /* MediaPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

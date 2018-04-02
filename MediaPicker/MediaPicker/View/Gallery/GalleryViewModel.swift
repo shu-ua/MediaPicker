@@ -15,6 +15,7 @@ struct GalleryViewModel {
     let configuration: Configuration
     
     var assets: Variable<[PHAsset]> = Variable([])
+    var phAuthStatus: Variable<PHAuthorizationStatus?> = Variable(nil)
     
     //MARK: - Initialization
     init(configuration: Configuration = Configuration()) {
@@ -26,9 +27,26 @@ struct GalleryViewModel {
     /**
      Fetch PHAsset based on Configuration.
     */
-    mutating func fetchAssets() {
+    func fetchAssets() {
         AssetManager.fetch(withConfiguration: configuration) { (assets) in
             self.assets.value = assets
+        }
+    }
+    
+    //MARK: - PHAuthorization
+    /**
+     Check current authorization status of PHLibrary. If not determined - reqeust user for authorization.
+     */
+    func checkPhLibraryAuthorization() {
+        let currentStatus = PHPhotoLibrary.authorizationStatus()
+        phAuthStatus.value = currentStatus
+        
+        guard currentStatus != .authorized else {
+            return
+        }
+        
+        PHPhotoLibrary.requestAuthorization { (authStatus) in
+            self.phAuthStatus.value = authStatus
         }
     }
     

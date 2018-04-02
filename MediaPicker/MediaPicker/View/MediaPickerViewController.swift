@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import Photos
 
 class MediaPickerViewController: UIViewController {
     
@@ -15,6 +17,8 @@ class MediaPickerViewController: UIViewController {
     @IBOutlet var galleryButton: UIButton!
     @IBOutlet var cameraButton: UIButton!
     @IBOutlet var videoButton: UIButton!
+    
+    let disposeBag = DisposeBag()
     
     //MARK: - Initialization
     public init(configuration: Configuration = Configuration()) {
@@ -30,6 +34,10 @@ class MediaPickerViewController: UIViewController {
     //MARK: - View Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
 
 }
