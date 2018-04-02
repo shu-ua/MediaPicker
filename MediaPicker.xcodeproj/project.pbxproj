@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56ADAFB2E2F6456E8AC50EA9 /* Pods_MediaPickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E679B6396C52BFD116F2B6 /* Pods_MediaPickerTests.framework */; };
+		F296F603207179250027FC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F602207179250027FC54 /* AppDelegate.swift */; };
+		F296F608207179250027FC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F296F606207179250027FC54 /* Main.storyboard */; };
+		F296F60A207179250027FC54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F296F609207179250027FC54 /* Assets.xcassets */; };
+		F296F60D207179250027FC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F296F60B207179250027FC54 /* LaunchScreen.storyboard */; };
+		F296F618207179250027FC54 /* MediaPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F617207179250027FC54 /* MediaPickerTests.swift */; };
+		F296F62820717AB20027FC54 /* MediaPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F62720717AB20027FC54 /* MediaPickerViewController.swift */; };
+		F296F62A20717AD00027FC54 /* MediaPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F62920717AD00027FC54 /* MediaPickerViewModel.swift */; };
+		F296F62C20717D180027FC54 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F62B20717D180027FC54 /* Configuration.swift */; };
+		F296F62F2071810D0027FC54 /* MediaPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F62E2071810D0027FC54 /* MediaPickerViewController.xib */; };
+		F296F632207187D50027FC54 /* MediaAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F631207187D50027FC54 /* MediaAsset.swift */; };
+		F296F63420718B790027FC54 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63320718B790027FC54 /* GalleryViewModel.swift */; };
+		F296F63720718FC50027FC54 /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63620718FC50027FC54 /* AssetManager.swift */; };
+		F296F6402071A1DF0027FC54 /* GalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F63E2071A1DF0027FC54 /* GalleryViewCell.swift */; };
+		F296F6412071A1DF0027FC54 /* GalleryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F63F2071A1DF0027FC54 /* GalleryViewCell.xib */; };
+		F296F6462071A65F0027FC54 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296F6442071A65F0027FC54 /* GalleryViewController.swift */; };
+		F296F6472071A65F0027FC54 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F296F6452071A65F0027FC54 /* GalleryViewController.xib */; };
+		F720F343DFAA52B96F891A24 /* Pods_MediaPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CFBDE6849BA8D82EA31C58 /* Pods_MediaPicker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F296F614207179250027FC54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F296F5F7207179250027FC54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F296F5FE207179250027FC54;
+			remoteInfo = MediaPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1836795D8F06ACCB12CC7975 /* Pods-MediaPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPicker/Pods-MediaPicker.release.xcconfig"; sourceTree = "<group>"; };
+		7A1AD5B7000A3ADE0AFA1F6B /* Pods-MediaPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPicker/Pods-MediaPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		A6CFBDE6849BA8D82EA31C58 /* Pods_MediaPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B40F191BCE9F140F5482476C /* Pods-MediaPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPickerTests/Pods-MediaPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCE50260FFB3AADAD52DE5ED /* Pods-MediaPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaPickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaPickerTests/Pods-MediaPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9E679B6396C52BFD116F2B6 /* Pods_MediaPickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MediaPickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F296F5FF207179250027FC54 /* MediaPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F296F602207179250027FC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F296F607207179250027FC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F296F609207179250027FC54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F296F60C207179250027FC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F296F60E207179250027FC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F296F613207179250027FC54 /* MediaPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F296F617207179250027FC54 /* MediaPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerTests.swift; sourceTree = "<group>"; };
+		F296F619207179250027FC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F296F62720717AB20027FC54 /* MediaPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerViewController.swift; sourceTree = "<group>"; };
+		F296F62920717AD00027FC54 /* MediaPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerViewModel.swift; sourceTree = "<group>"; };
+		F296F62B20717D180027FC54 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F296F62E2071810D0027FC54 /* MediaPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaPickerViewController.xib; sourceTree = "<group>"; };
+		F296F631207187D50027FC54 /* MediaAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAsset.swift; sourceTree = "<group>"; };
+		F296F63320718B790027FC54 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		F296F63620718FC50027FC54 /* AssetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
+		F296F63E2071A1DF0027FC54 /* GalleryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewCell.swift; sourceTree = "<group>"; };
+		F296F63F2071A1DF0027FC54 /* GalleryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewCell.xib; sourceTree = "<group>"; };
+		F296F6442071A65F0027FC54 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = MediaPicker/MediaPicker/View/Gallery/GalleryViewController.swift; sourceTree = SOURCE_ROOT; };
+		F296F6452071A65F0027FC54 /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GalleryViewController.xib; path = MediaPicker/MediaPicker/View/Gallery/GalleryViewController.xib; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F296F5FC207179250027FC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F720F343DFAA52B96F891A24 /* Pods_MediaPicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F296F610207179250027FC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56ADAFB2E2F6456E8AC50EA9 /* Pods_MediaPickerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F147416A19FA48C91226954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6CFBDE6849BA8D82EA31C58 /* Pods_MediaPicker.framework */,
+				C9E679B6396C52BFD116F2B6 /* Pods_MediaPickerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8605995FBAA2EBC7F4F79C4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A1AD5B7000A3ADE0AFA1F6B /* Pods-MediaPicker.debug.xcconfig */,
+				1836795D8F06ACCB12CC7975 /* Pods-MediaPicker.release.xcconfig */,
+				BCE50260FFB3AADAD52DE5ED /* Pods-MediaPickerTests.debug.xcconfig */,
+				B40F191BCE9F140F5482476C /* Pods-MediaPickerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F296F5F6207179250027FC54 = {
+			isa = PBXGroup;
+			children = (
+				F296F601207179250027FC54 /* MediaPicker */,
+				F296F616207179250027FC54 /* MediaPickerTests */,
+				F296F600207179250027FC54 /* Products */,
+				8605995FBAA2EBC7F4F79C4D /* Pods */,
+				1F147416A19FA48C91226954 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F296F600207179250027FC54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F296F5FF207179250027FC54 /* MediaPicker.app */,
+				F296F613207179250027FC54 /* MediaPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F296F601207179250027FC54 /* MediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F296F6232071797D0027FC54 /* DemoApp */,
+				F296F622207179780027FC54 /* MediaPicker */,
+				F296F602207179250027FC54 /* AppDelegate.swift */,
+				F296F606207179250027FC54 /* Main.storyboard */,
+				F296F609207179250027FC54 /* Assets.xcassets */,
+				F296F60B207179250027FC54 /* LaunchScreen.storyboard */,
+				F296F60E207179250027FC54 /* Info.plist */,
+			);
+			path = MediaPicker;
+			sourceTree = "<group>";
+		};
+		F296F616207179250027FC54 /* MediaPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F296F617207179250027FC54 /* MediaPickerTests.swift */,
+				F296F619207179250027FC54 /* Info.plist */,
+			);
+			path = MediaPickerTests;
+			sourceTree = "<group>";
+		};
+		F296F622207179780027FC54 /* MediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				F296F631207187D50027FC54 /* MediaAsset.swift */,
+				F296F62420717A320027FC54 /* View */,
+				F296F63520718FB10027FC54 /* Services */,
+				F296F62B20717D180027FC54 /* Configuration.swift */,
+			);
+			path = MediaPicker;
+			sourceTree = "<group>";
+		};
+		F296F6232071797D0027FC54 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		F296F62420717A320027FC54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F296F630207187930027FC54 /* Gallery */,
+				F296F62920717AD00027FC54 /* MediaPickerViewModel.swift */,
+				F296F62720717AB20027FC54 /* MediaPickerViewController.swift */,
+				F296F62E2071810D0027FC54 /* MediaPickerViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F296F630207187930027FC54 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				F296F63C207199930027FC54 /* View */,
+				F296F63320718B790027FC54 /* GalleryViewModel.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		F296F63520718FB10027FC54 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F296F63620718FC50027FC54 /* AssetManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F296F63C207199930027FC54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F296F63D2071A1BD0027FC54 /* Cell */,
+				F296F6442071A65F0027FC54 /* GalleryViewController.swift */,
+				F296F6452071A65F0027FC54 /* GalleryViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F296F63D2071A1BD0027FC54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F296F63E2071A1DF0027FC54 /* GalleryViewCell.swift */,
+				F296F63F2071A1DF0027FC54 /* GalleryViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F296F5FE207179250027FC54 /* MediaPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F296F61C207179250027FC54 /* Build configuration list for PBXNativeTarget "MediaPicker" */;
+			buildPhases = (
+				164DE3F100F210701DD664DD /* [CP] Check Pods Manifest.lock */,
+				F296F5FB207179250027FC54 /* Sources */,
+				F296F5FC207179250027FC54 /* Frameworks */,
+				F296F5FD207179250027FC54 /* Resources */,
+				4B925D4A21A1CE3CCF77D5C1 /* [CP] Embed Pods Frameworks */,
+				DA7BEAB60FAC4F2E6ACF56C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaPicker;
+			productName = MediaPicker;
+			productReference = F296F5FF207179250027FC54 /* MediaPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F296F612207179250027FC54 /* MediaPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F296F61F207179250027FC54 /* Build configuration list for PBXNativeTarget "MediaPickerTests" */;
+			buildPhases = (
+				8472ECE9EF36BC9AF8169304 /* [CP] Check Pods Manifest.lock */,
+				F296F60F207179250027FC54 /* Sources */,
+				F296F610207179250027FC54 /* Frameworks */,
+				F296F611207179250027FC54 /* Resources */,
+				D36638CCC2A48F264ED840DD /* [CP] Embed Pods Frameworks */,
+				CA1EB00CE523A44921895F68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F296F615207179250027FC54 /* PBXTargetDependency */,
+			);
+			name = MediaPickerTests;
+			productName = MediaPickerTests;
+			productReference = F296F613207179250027FC54 /* MediaPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F296F5F7207179250027FC54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bohdan Shcherbyna";
+				TargetAttributes = {
+					F296F5FE207179250027FC54 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F296F612207179250027FC54 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F296F5FE207179250027FC54;
+					};
+				};
+			};
+			buildConfigurationList = F296F5FA207179250027FC54 /* Build configuration list for PBXProject "MediaPicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F296F5F6207179250027FC54;
+			productRefGroup = F296F600207179250027FC54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F296F5FE207179250027FC54 /* MediaPicker */,
+				F296F612207179250027FC54 /* MediaPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F296F5FD207179250027FC54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F296F6412071A1DF0027FC54 /* GalleryViewCell.xib in Resources */,
+				F296F60D207179250027FC54 /* LaunchScreen.storyboard in Resources */,
+				F296F62F2071810D0027FC54 /* MediaPickerViewController.xib in Resources */,
+				F296F60A207179250027FC54 /* Assets.xcassets in Resources */,
+				F296F608207179250027FC54 /* Main.storyboard in Resources */,
+				F296F6472071A65F0027FC54 /* GalleryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F296F611207179250027FC54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		164DE3F100F210701DD664DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B925D4A21A1CE3CCF77D5C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MediaPicker/Pods-MediaPicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaPicker/Pods-MediaPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8472ECE9EF36BC9AF8169304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MediaPickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1EB00CE523A44921895F68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaPickerTests/Pods-MediaPickerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36638CCC2A48F264ED840DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaPickerTests/Pods-MediaPickerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7BEAB60FAC4F2E6ACF56C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaPicker/Pods-MediaPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F296F5FB207179250027FC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F296F62A20717AD00027FC54 /* MediaPickerViewModel.swift in Sources */,
+				F296F63420718B790027FC54 /* GalleryViewModel.swift in Sources */,
+				F296F603207179250027FC54 /* AppDelegate.swift in Sources */,
+				F296F63720718FC50027FC54 /* AssetManager.swift in Sources */,
+				F296F632207187D50027FC54 /* MediaAsset.swift in Sources */,
+				F296F6402071A1DF0027FC54 /* GalleryViewCell.swift in Sources */,
+				F296F6462071A65F0027FC54 /* GalleryViewController.swift in Sources */,
+				F296F62C20717D180027FC54 /* Configuration.swift in Sources */,
+				F296F62820717AB20027FC54 /* MediaPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F296F60F207179250027FC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F296F618207179250027FC54 /* MediaPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F296F615207179250027FC54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F296F5FE207179250027FC54 /* MediaPicker */;
+			targetProxy = F296F614207179250027FC54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F296F606207179250027FC54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F296F607207179250027FC54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F296F60B207179250027FC54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F296F60C207179250027FC54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F296F61A207179250027FC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F296F61B207179250027FC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F296F61D207179250027FC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1AD5B7000A3ADE0AFA1F6B /* Pods-MediaPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY2JY343Q2;
+				INFOPLIST_FILE = MediaPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shu-ua.assets.MediaPicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F296F61E207179250027FC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1836795D8F06ACCB12CC7975 /* Pods-MediaPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY2JY343Q2;
+				INFOPLIST_FILE = MediaPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shu-ua.assets.MediaPicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F296F620207179250027FC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCE50260FFB3AADAD52DE5ED /* Pods-MediaPickerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY2JY343Q2;
+				INFOPLIST_FILE = MediaPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shu-ua.assets.MediaPickerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaPicker.app/MediaPicker";
+			};
+			name = Debug;
+		};
+		F296F621207179250027FC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B40F191BCE9F140F5482476C /* Pods-MediaPickerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY2JY343Q2;
+				INFOPLIST_FILE = MediaPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shu-ua.assets.MediaPickerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaPicker.app/MediaPicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F296F5FA207179250027FC54 /* Build configuration list for PBXProject "MediaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F296F61A207179250027FC54 /* Debug */,
+				F296F61B207179250027FC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F296F61C207179250027FC54 /* Build configuration list for PBXNativeTarget "MediaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F296F61D207179250027FC54 /* Debug */,
+				F296F61E207179250027FC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F296F61F207179250027FC54 /* Build configuration list for PBXNativeTarget "MediaPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F296F620207179250027FC54 /* Debug */,
+				F296F621207179250027FC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F296F5F7207179250027FC54 /* Project object */;
+}
