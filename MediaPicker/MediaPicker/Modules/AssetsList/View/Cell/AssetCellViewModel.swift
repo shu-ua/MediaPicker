@@ -1,5 +1,5 @@
 //
-//  GalleryCellViewModel.swift
+//  AssetCellViewModel.swift
 //  MediaPicker
 //
 //  Created by Bohdan Shcherbyna on 4/2/18.
@@ -10,7 +10,7 @@ import Foundation
 import Photos
 import RxSwift
 
-class GalleryCellViewModel {
+class AssetCellViewModel {
     
     var assetType: Variable<AssetType?> = Variable(nil)
     var assetImage: Variable<UIImage?> = Variable(nil)
@@ -22,7 +22,6 @@ class GalleryCellViewModel {
             self.updateAssetsVariable()
         }
     }
-    
     
     //MARK: - Initialization
     init(asset: PHAsset, imageSize: CGSize = CGSize(width: 720, height: 720)) {

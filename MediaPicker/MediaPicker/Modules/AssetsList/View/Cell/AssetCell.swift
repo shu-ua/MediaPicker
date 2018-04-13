@@ -1,5 +1,5 @@
 //
-//  GalleryCell.swift
+//  AssetCell
 //  MediaPicker
 //
 //  Created by Bohdan Shcherbyna on 4/2/18.
@@ -10,9 +10,9 @@ import UIKit
 import Photos
 import RxSwift
 
-class GalleryCell: UICollectionViewCell {
+class AssetCell: UICollectionViewCell {
     
-    static let cellIdintifier = "GalleryCell"
+    static let cellIdintifier = "AssetCell"
     
     @IBOutlet var assetImageView: UIImageView!
     @IBOutlet var videoDurationBackground: UIView!
@@ -20,7 +20,7 @@ class GalleryCell: UICollectionViewCell {
     
     let bag = DisposeBag()
     
-    var viewModel: GalleryCellViewModel? {
+    var viewModel: AssetCellViewModel? {
         didSet {
             self.viewModel?.assetType.asObservable().subscribe(onNext: { (type) in self.updateView(withAssetType: type) }).disposed(by: bag)
             self.viewModel?.assetImage.asObservable().subscribe(onNext: {(image) in self.updateView(withAssetImage: image)}).disposed(by: bag)

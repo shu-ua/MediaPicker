@@ -10,7 +10,7 @@ import Foundation
 import Photos
 import RxSwift
 
-struct GalleryViewModel {
+struct AssetsListViewModel {
     
     let configuration: Configuration
     
