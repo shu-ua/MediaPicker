@@ -72,7 +72,7 @@ extension AssetsListViewController: UICollectionViewDelegate {
     fileprivate func setupAssetsCollectionView() {
         self.assetsCollectionView.register(UINib(nibName: AssetCell.cellIdintifier, bundle: Bundle(for: self.classForCoder)), forCellWithReuseIdentifier: AssetCell.cellIdintifier)
         self.assetsCollectionView.rx.setDelegate(self).disposed(by: bag)
-        
+    
         self.viewModel.assets.asObservable().bind(to: self.assetsCollectionView.rx.items) { (collectionView, row, asset) in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AssetCell.cellIdintifier, for: IndexPath(row : row, section : 0)) as! AssetCell
             self.updateAssetCollectionViewCell(cell: cell, withAsset: asset)
@@ -84,6 +84,16 @@ extension AssetsListViewController: UICollectionViewDelegate {
     fileprivate func updateAssetCollectionViewCell(cell: AssetCell, withAsset asset: PHAsset) {
         let cellViewModel = AssetCellViewModel(asset: asset)
         cell.viewModel = cellViewModel
+    }
+}
+
+extension AssetsListViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let calculcatedValue = Double(collectionView.frame.size.width) / (viewModel.assetsListCollumnCount) //add 0.1 for padding
+        print("size - \(calculcatedValue) with frame - \(collectionView.frame.size.width)")
+        return CGSize(width: calculcatedValue, height: calculcatedValue)
     }
     
 }

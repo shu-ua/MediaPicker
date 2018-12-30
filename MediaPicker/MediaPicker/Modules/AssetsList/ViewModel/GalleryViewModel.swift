@@ -13,9 +13,11 @@ import RxSwift
 struct AssetsListViewModel {
     
     let configuration: Configuration
+    let assetsListCollumnCount: Double = 4
     
     var assets: Variable<[PHAsset]> = Variable([])
     var phAuthStatus: Variable<PHAuthorizationStatus?> = Variable(nil)
+    
     
     //MARK: - Initialization
     init(configuration: Configuration = Configuration()) {

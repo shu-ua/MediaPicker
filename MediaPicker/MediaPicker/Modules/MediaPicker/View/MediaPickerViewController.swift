@@ -35,6 +35,7 @@ class MediaPickerViewController: ParentViewController {
     //MARK: - View Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "MediaPicker"
         initViews()
     }
     
